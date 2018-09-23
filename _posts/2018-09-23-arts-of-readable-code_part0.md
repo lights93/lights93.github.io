@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "읽기 좋은 코드가 좋은 코드다 part1"
+title: "읽기 좋은 코드가 좋은 코드다 part0"
 date: 2018-09-23
-excerpt: "읽기 좋은 코드가 좋은 코드다 part1"
+excerpt: "읽기 좋은 코드가 좋은 코드다 part0"
 tags: [artsOfReadableCode]
 comments: true
 ---
