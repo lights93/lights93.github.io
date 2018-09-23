@@ -1,9 +1,9 @@
 ---
-layout: [post, artsOfReadableCode]
-title: "Testing Readability with a Bunch of Text"
-date: 2012-05-22
-excerpt: "A ton of text to test readability."
-tags: [sample post, readability, test]
+layout: post
+title: "읽기 좋은 코드가 좋은 코드다 part1"
+date: 2018-09-23
+excerpt: "읽기 좋은 코드가 좋은 코드다 part1"
+tags: [post, artsOfReadableCode]
 comments: true
 ---
 
