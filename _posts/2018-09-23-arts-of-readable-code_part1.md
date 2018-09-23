@@ -3,7 +3,7 @@ layout: post
 title: "읽기 좋은 코드가 좋은 코드다 part1"
 date: 2018-09-23
 excerpt: "읽기 좋은 코드가 좋은 코드다 part1"
-tags: [post, artsOfReadableCode]
+tags: [artsOfReadableCode]
 comments: true
 ---
 
@@ -21,7 +21,7 @@ comments: true
 	* serverCanStart()는 canListenOnPort()에 비해서 의미가 모호하다
 
 * #### 변수명에 중요한 세부 정보를 덧붙여라
-		* 밀리초의 값을 저장하는 변수 뒤에 _ms를 붙인다.
+	* 밀리초의 값을 저장하는 변수 뒤에 _ms를 붙인다.
 
 * #### 사용 범위가 넓으면 긴 이름을 사용하라
 	* 여러 페이지에서 걸쳐서 사용되는 변수의 이름을 하나 혹은 두 개의 짧은 문자로 구성해 의미를 알아보기 힘들게 짓지 말라
