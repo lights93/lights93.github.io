@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: "케라스 창시자에게 배우는 딥러닝"
+title: "딥러닝이란 무엇인가?"
 date: 2018-10-31
 excerpt: "딥러닝이란?"
 tags: [Keras, deepLearning]
