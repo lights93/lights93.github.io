@@ -2,7 +2,7 @@
 ---
 layout: post
 title: "케라스 창시자에게 배우는 딥러닝"
-date: 2018-10-14
+date: 2018-10-31
 excerpt: "딥러닝이란?"
 tags: [Keras, deepLearning]
 comments: true
@@ -107,4 +107,3 @@ comments: true
 		2. **확장성**: 쉽게 병렬화, 작은 배치 데이터
 		3. **다용도와 재사용성**: 추가되는 데이터로도 훈련 가능
 	* 앞으로 몇 년은 더 갈 듯
-	
