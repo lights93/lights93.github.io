@@ -168,4 +168,4 @@ comments: true
 
 ## 2.5 첫 번째 예제 다시 살펴보기
 	
-![테스트](https://github.com/lights93/lights93.github.io/blob/master/assets/img/2.5.png)    
+![테스트](/assets/img/2.5.png)    
