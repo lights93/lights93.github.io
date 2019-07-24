@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Attention 논문 정리"
-date: 2018-06-07
+date: 2019-06-07
 excerpt: "Attention 논문 정리"
 tags: [BERT, Attention, deepLearning]
 comments: true

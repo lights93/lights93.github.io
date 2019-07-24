@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "BERT 논문 정리"
-date: 2018-06-07
+date: 2019-06-07
 excerpt: "BERT 논문 정리"
 tags: [BERT, deepLearning]
 comments: true
