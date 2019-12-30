@@ -9,7 +9,7 @@ comments: true
 
 # 5. 기본적인 리팩토링 목표
 
-프레임워크가 자바스크립트의 자율성을 완전히 제한할 수도 또는 그렇게 해서는 안 됨
+프레임워크가 자바스크립트의 자율성을 완전히 제한해서는 안 됨
 
 기본 기능의 구성 요소 6가지
 
@@ -163,7 +163,7 @@ this는 최상위 범위
 
 2. Object.create()
 
-2. ```javascript
+  ```javascript
    var anObject =
        Object.create(null, {"number": {value: 5},
        "getNumber": {value: function(){return this.number}}});
@@ -172,16 +172,16 @@ this는 최상위 범위
 
 3. 클래스
 
-   ```javascript
-   class AnObject{
-     constructor(){
-       this.number = 5;
-       this.getNumber = function(){return this.number}
-     }
+  ```javascript
+  class AnObject{
+   constructor(){
+     this.number = 5;
+     this.getNumber = function(){return this.number}
    }
-   anObject = new AnObject;
-   console.log(anObject.getNumber());
-   ```
+  }
+  anObject = new AnObject;
+  console.log(anObject.getNumber());
+  ```
 
 this는 call, apply, bind 함수를 사용해서 변경 가능
 
@@ -410,4 +410,4 @@ private 변수와 _unlock 함수가 노출됨
 
 리팩토링 자바스크립트(Refactoring JavaScript)
 
-https://github.com/gilbutITbook/006963/tree/master/ch05
+[링크](https://github.com/gilbutITbook/006963/tree/master/ch05).

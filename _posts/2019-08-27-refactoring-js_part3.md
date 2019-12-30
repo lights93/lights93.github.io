@@ -28,7 +28,7 @@ comments: true
 
 - 확신
 
-  완전한 테스트 커버리지는 의도한 것처럼 전테 코드 베이스가 잘 동작한다는 확신
+  완전한 테스트 커버리지는 의도한 것처럼 전체 코드 베이스가 잘 동작한다는 확신
 
 - 실행
 
@@ -180,7 +180,7 @@ comments: true
 
   TDD를 하면 적색/녹색/리팩토링 주기를 사용하여 개발 전반적인 지침을 세울 수 있음
 
-  참고: https://ahea.wordpress.com/2018/09/10/%EC%84%A0%ED%83%9D%EC%9D%B4-%EC%95%84%EB%8B%8C-%ED%95%84%EC%88%98-tdd/
+  참고: [링크](https://ahea.wordpress.com/2018/09/10/%EC%84%A0%ED%83%9D%EC%9D%B4-%EC%95%84%EB%8B%8C-%ED%95%84%EC%88%98-tdd/).
 
 ### 3.3.2 품질 도구
 
@@ -236,4 +236,4 @@ comments: true
 
 리팩토링 자바스크립트(Refactoring JavaScript)
 
-https://ahea.wordpress.com/2018/09/10/%EC%84%A0%ED%83%9D%EC%9D%B4-%EC%95%84%EB%8B%8C-%ED%95%84%EC%88%98-tdd/
+[링크](https://ahea.wordpress.com/2018/09/10/%EC%84%A0%ED%83%9D%EC%9D%B4-%EC%95%84%EB%8B%8C-%ED%95%84%EC%88%98-tdd/).
