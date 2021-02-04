@@ -3,7 +3,7 @@ layout: post
 title: "주식투자 차트"
 date: 2021-01-12
 excerpt: "주식투자 차트"
-tags: [stock, review]
+tags: [stock]
 comments: true
 ---
 
