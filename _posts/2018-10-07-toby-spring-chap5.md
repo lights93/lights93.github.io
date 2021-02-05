@@ -60,7 +60,7 @@ comments: true
 * 5.2.1 모 아니면 도
 	* 예외가 던져지는 상황을 의도적으로 만들어서 확인
 	* 테스트용 UserService 대역
-	```
+	```java
 	static class TestUserService extends UserService {
 		private String id;
 
@@ -73,9 +73,10 @@ comments: true
 			super.upgradeLevel(user);
 		}
 	}
- 	```
+```
 
- 	* 강제 예외 발생을 통한 테스트
+  * 강제 예외 발생을 통한 테스트
+
  		* 두 번째 사용자의 레벨이 BASIC에서 SILVER로 바뀐 것이 네 번째 사용자 처리 중 예외가 발생했지만 그대로 유지되기 때문에 실패
 	* 테스트 실패의 원인
 		* **트랜잭션**: 더 이상 나눌 수 없는 단위 작업
@@ -99,6 +100,7 @@ comments: true
 		2. DAO의 메소드와 비즈니스 로직을 담고 있는 UserService의 메소드에 Connection 파라미터가 추가되어야 한다.
 		3. Connection 파라미터가 UserDao 인터페이스 메소드에 추가되면 UserDao는 더 이상 액세스 기술에 독립적일 수가 없다.
 		4. DAO 메소드에 Connection 파라미터를 받게 하면 테스트 코드에도 영향을 미친다.
+	
 * 5.2.3 트랜잭션 동기화
 	* Connection 파라미터 제거
 		* **트랜잭션 동기화**: UserService에서 트랜잭션을 시작하기 위해 만든 Connection 오브젝트를 특별한 저장소에 보관해두고, 이후에 호출되는 DAO의 메소드에서는 저장된 Connection을 가져다가 사용하게 하는 것
@@ -113,6 +115,7 @@ comments: true
 	* JdbcTemplate과 트랜잭션 동기화
 		* 만약 미리 생성돼서 트랜잭션 동기화 저장소에 등록된 DB 커넥션이나 트랜잭션이 없는 경우에는 JdbcTemplate이 직접 DB 커넥션을 만들고 트랜잭션을 시작해서 JDBC 작업을 진행한다.
 		* 반면에 트랜잭션 동기화를 시작해놓았다면 그때부터 실행되는 JdbcTemplate의 메소드에서는 직접 DB 커넥션을 만드는 대신 트랜잭션 동기화 저장소에 들어 있는 DB 커넥션을 가져와서 사용한다.
+	
 * 5.2.4 트랜잭션 서비스 추상화
 	* 기술과 환경에 종속되는 트랜잭션 경계설정 코드
 		* 하나의 트랜잭션 안에서 어려 개의 DB에 데이터를 넣는 작업을 할 때, 로컬 트랜잭션으로 불가능

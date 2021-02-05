@@ -12,13 +12,14 @@ comments: true
 ## 6.1 사용자 레벨 관리 기능 추가
 
 * 6.1.1 메소드 분리
+	
 	* 트랜잭션 경계설정의 코드와 비즈니스 로직 코드 간에 서로 주고받는 정보가 없기 때문에 분리 가능
 * 6.1.2 DI를 이용한 클래스의 분리
 	* DI 적용을 이용한 트랜잭션 분리
 		* 한 번에 두 개의 UserService 인터페이스 구현 클래스 이용(UserServiceImpl, UserServiceTx)
 	* UserService 인터페이스 도입
-	```
-	public interface UserService {
+	```java
+	10.113.116.52public interface UserService {
 		void add(User user);
 		void upgradeLevels();
 	}
@@ -39,9 +40,13 @@ comments: true
 ## 6.2 고립된 단위 테스트
 
 * 6.2.1 복잡한 의존관계 속의 테스트
+	
 	* UserService를 테스트하는 것처럼 보이지만 사실은 그 뒤에 존재하는 훨씬 더 많은 오브젝트와 환경, 서비스, 서버, 네트워크까지 함께 테스트함
+	
 * 6.2.2 테스트 대상 오브젝트 고립시키기
+	
 	테스트의 대상이 환경이나, 외부 서버, 다른 클래스의 코드에 종속되고 영향을 받지 않도록 고립시킬 필요가 있다.
+	
 	* 테스트를 위한 UserServiceImpl 고립
 	* 고립된 단위 테스트 활용
 		1. 테스트 실행 중에 UserDao를 통해 가져올 테스트용 정보를 DB에 넣는다.
@@ -53,9 +58,10 @@ comments: true
 		* UserDao와 DB까지 직접 의존하고 있는 첫 번째와 네 번째의 테스트 방식에 목 오브젝트 적용
 		* getAll()에 대해서는 스텁으로서, update()에 대해서는 목 오브젝트로서 동작하는 UserDao의 테스트 대역 필요 -> MockUserDao
 		* 인터페이스를 구현하므로 사용하지 않는 메소드가 있다. 이 메소드에서는 아무 것도 안 하는 것 보다 UnsupportedOperationException을 던지게 하여 지원하지 않는 기능이라는 예외가 발생하도록 만드는 것이 좋다.
-		* 기존에는 @AutoWired를 통해 UserService 타입의 빈을 가져왔지만, MockUserDao를 도입하여 고립됐기 때문에 빈을 가져올 필요가 없다.
+		* 기존에는 `@AutoWired`를 통해 UserService 타입의 빈을 가져왔지만, MockUserDao를 도입하여 고립됐기 때문에 빈을 가져올 필요가 없다.
 	* 테스트 수행 성능의 향상
 		* 고립된 테스트를 하면 테스트가 다른 의존 대상에 영향을 받을 경우를 대비해 복잡하게 준비할 필요가 없을 뿐만 아니라, 테스트 수행 성능도 향상된다.
+	
 * 6.2.3 단위 테스트와 통합 테스트
 	* 단위 테스트: 테스트 대상 클래스를 목 오브젝트 등의 테스트 대역을 이용해 의존 오브젝트나 외부의 리소스를 사용하지 않도록 고립시켜서 테스트하는 것
 	* 통합 테스트: 두 개 이상의, 성격이나 계층이 다른 오브젝트가 연동하도록 만들어 테스트하거나, 또는 외부의 DB나 파일, 서비스 등의 리소스가 참여하는 테스트
@@ -70,6 +76,7 @@ comments: true
 		* 스프링 테스트 컨텍스트 프레임워크를 이용하는 테스트는 통합 테스트다. 가능하면 스프링의 지원 없이 직접 코드 레벨의 DI를 사용하면서 단위 테스트를 하는 게 좋다.
 	* 테스트는 코드가 작성되고 빠르게 진행되는 편이 좋다.
 	* 코드르 작성하면서 테스트는 어떻게 만들 수 있을까를 생각해보는 것은 좋은 습관이다.
+	
 * 6.2.4 **목 프레임워크**
 	* Mockito 프레임워크
 		* 목 프레임워크의 특징은 목 클래스를 일일이 준비할 필요가 없다는 점이다.
@@ -86,7 +93,7 @@ comments: true
 	* 그래서 부가기능은 마치 자신이 핵심 기능을 가진 클래스인 것처럼 꾸며서, 클라이언트가 자신을 거쳐서 핵심기능을 사용하도록 만들어야 한다.
 	* 프록시: 자신이 클라이언트가 사용하려고 하는 실제 대상인 것처럼 위장해서 클라이언트의 요청을 받아주는 것
 	* 타깃(실체): 프록시를 통해 최종적으로 요청을 위임받아 처리하는 실제 오브젝트
-	* 프록시의 특징은 타깃과 가은 인터페이스를 구현했다는 것과 프록시가 타기슬 제어할 수 있는 위치에 있다는 것
+	* 프록시의 특징은 타깃과 같은 인터페이스를 구현했다는 것과 프록시가 타깃을 제어할 수 있는 위치에 있다는 것
 	* 프록시는 사용 목적에 따라 두 가지로 구분
 		1. 클라이언트가 타깃에 접근하는 방법 제어
 		2. 타깃에 부가적인 기능을 부여하기 위해서
@@ -116,6 +123,7 @@ comments: true
 		* 다이내믹 프록시는 리플렉션 기능을 이용해서 프록시를 만든다.
 		* 리플렉션은 자바의 코드 자체를 추상화해서 접근하도록 만든 것
 	* 프록시 클래스
+		
 		* HelloUpperCase 데코레이터 패턴 추가
 	* 다이내믹 프록시 적용
 		* 다이내믹 프록시는 프록시 팩토리에 의해 런타임 시 다이내믹하게 만들어지는 오브젝트
@@ -123,7 +131,7 @@ comments: true
 		* 부가기능은 프록시 오브젝트와 독립적으로 InvocationHandler를 구현한 오브젝트에 담는다.
 		* public Object invoke(Object proxy, Method method, Object[] args)
 		* 다이내믹 프록시 오브젝트는 클라이언트의 모든 요청을 리플렉션 정보로 변환해서 InvocationHandler 구현 오브젝트의 invoke() 메소드로 넘긴다.
-		```
+		```java
 		// 프록시 생성
 		Hello proxiedHello = (Hello)Proxy.newProxyInterface( // 생성된 다이내믹 프록시 오브젝트는 Hello 인터페이스를 구현하고 있으므로 캐스팅 안전
 			getClass().getClassLoader(), // 동적으로 생성되는 다이내믹 프록시 클래스의 로딩에 사용할 클래스 로더
@@ -142,7 +150,7 @@ comments: true
 	* 다이내믹 프록시 오브젝트는 리플렉션 API를 이용해서 빈 정의에 나오는 클래스 이름을 가지고 오브젝트를 생성할 수 없다.
 	* 팩토리 빈
 		* **팩토리 빈**: 스프링을 대신해서 오브젝트의 생성로직을 담당하도록 만들어진 특별한 빈
-		```
+		```java
 		public interface FactoryBean<T> {
 			T getObject() throws Exception; // 빈 오브젝트를 생성해서 돌려준다.
 			Class<? extends T> getObjectType(); // 생성되는 오브젝트의 타입을 알려준다.
@@ -151,6 +159,7 @@ comments: true
 		```
 		* 스프링은 private 생성자를 가진 클래스도 빈으로 등록해주면 리플렉션을 이용해 오브젝트를 만들어준다.
 	* 팩토리 빈의 설정 방법
+		
 		* 여타 빈 설정과 다른 점은 message 빈 오브젝트의 타입이 class 애트리뷰트에 정의된 MessageFactoryBean이 아니라 Message 타입이라는 것
 	* 다이내믹 프록시를 만들어주는 팩토리 빈
 		* 스프링 빈에는 팩토리 빈과 UserServiceImpl만 빈으로 등록
@@ -164,7 +173,7 @@ comments: true
 		* 타깃 오브젝트에 맞는 프로퍼티 정보를 설정해서 빈으로 등록하면 재사용 가능
 	* 프록시 팩토리 빈 방식의 장점
 		* 타깃 인터페이스를 구현하는 클래스를 일일이 만드는 번거로움 제거
-		* 하나의 핸들러 메소드를 구현하는 것만으로도 수많은 메소드에 부가기능 부여할 수 있이 때문에 중복 문제 제거
+		* 하나의 핸들러 메소드를 구현하는 것만으로도 수많은 메소드에 부가기능 부여할 수 있기 때문에 중복 문제 제거
 	* 프록시 팩토리 빈의 한계
 		* 한 번에 여러 개의 클래스에 공통적인 부가기능을 제공하는 것 불가능
 		* 하나의 타깃에 여러 개의 부가기능을 적용할 때, 설정 파일이 너무 복잡하고 길어지는 문제
@@ -177,7 +186,7 @@ comments: true
 	* ProxyFactoryBean이 생성하는 프록시에서 사용할 부가기능은 MethodInterceptor 인터페이스를 구현해서 만든다.
 	* MethodInterceptor의 invoke() 메소드는 ProxyFactoryBean으로부터 타깃 오브젝트에 대한 정보까지도 함께 제공받는다.
 	* 그래서 MethodInterceptor는 타깃 오브젝트에 상관없이 독립적으로 만들어질 수 있다.
-	```
+	```java
 	@Test
 	public void proxyFactoryPattern() {
 		ProxyFactoryBean pfBean = new ProxyFactoryBean();
@@ -186,7 +195,7 @@ comments: true
 		Hello proxiedHello = (Hello)pfBean.getObject(); // FactoryBean이므로 getObject()로 생성된 프록시를 가져온다.
 	}
 	```
-	```
+	```java
 	static class UppercaseAdvice implements MethodInterceptor {
 		public Object invoke(MethodInvocation invocation) throws Throwable {
 			String ret = (String)invocation.proceed(); // 리플렉션의 Method와 달리 메소드 실행 시 타깃 오브젝트를 전달한 필요가 없다.
@@ -194,7 +203,7 @@ comments: true
 		}
 	}
 	```
-	* 어드바이스: 타깃이 필요 없는 순수한 부가기능
+	* **어드바이스**: 타깃이 필요 없는 순수한 부가기능
 		* MethodInvocation은 일종의 콜백 오브젝트로, proceed() 메소드를 실행하면 타깃 오브젝트의 메소드를 내부적으로 실행해주는 기능이 있다.
 		* ProxyFactoryBean은 작은 단위의 템플릿/콜백 구조를 응용해서 적용했기 때문에 템플릿 역할을 하는 MethodInvocation을 싱글톤으로 두고 공유할 수 있다.
 		* addAdvice()를 통해 여러 개의 MethodInterceptor를 추가할 수 있다(ProxyFactoryBean 하나만으로 여러 개의 부가기능 제공 가능).
@@ -223,7 +232,7 @@ comments: true
 	* 테스트
 	* 어드바이스와 포인트컷의 재사용
 		* ProxyFactoryBean은 스프링의 DI, 템플릿/콜백 패턴, 서비스 추상화 등의 기법이 모두 적용된 것이다.
-		* 그래서 독립적이며, 여러 프록시가 굥유할 수 있는 어드바이스와 포인트컷으로 분리 가능 -> 재사용 가능
+		* 그래서 독립적이며, 여러 프록시가 공유할 수 있는 어드바이스와 포인트컷으로 분리 가능 -> 재사용 가능
 
 ## 6.5 스프링 AOP
 
@@ -232,10 +241,10 @@ comments: true
 	* 빈 후처리기를 이용한 자동 프록시 생성기
 		* 빈 후처리기가 빈으로 등록되어 있으면 빈 오브젝트가 생성될 때마다 빈후처리기에 보내서 후처리 작업을 요청
 		* 자동 프록시 생성 빈 후처리기: 스프링이 생성하는 빈 오브젝트의 일부를 프록시로 포장, 프록시를 빈으로 대신 등록 가능
-		* 빈 후처리기는 빈으로 드옥된 모든 어드바이저 내의 포인트컷을 이용해 전달받은 빈이 프록시 적용 대상인지 확인
+		* 빈 후처리기는 빈으로 등록된 모든 어드바이저 내의 포인트컷을 이용해 전달받은 빈이 프록시 적용 대상인지 확인
 		* 프록시 적용 대상이면 내장된 프록시 생성기에게 현재 빈에 대한 프록시를 만들게 하고, 만들어진 프록시에 어드바이저 연결
 	* 확장된 포인트컷
-	```
+	```java
 		public interface PointCut {
 			ClassFilter getClassFilter(); // 프록시를 적용할 클래스인지 확인해준다.
 			MethodMatcher getMethodMatcher(); // 어드바이스를 적용할 메소드인지 확인해준다.
@@ -248,14 +257,16 @@ comments: true
 	* 어드바이저를 이용하는 자동 프록시 생성기 등록
 	* 포인트컷 등록
 	* 어드바이스와 어드바이저
+		
 		* 어드바이저를 이용하는 자동 프록시 생성기인 DefaultAdvisorAutoProxyCreator에 의해 자동수집되고, 프록시 대상 선정 과정에 참여하며, 자동생성된 프록시에 다이내믹하게 DI돼서 동작하는 어드바이저가 된다.
 	* ProxyFactoryBean 제거와 서비스 빈의 원상복구
+		
 		* 명시적인 프록시 팩토리 빈을 등록하지 않기 때문에 원상복구한다.
 	* 자동 프록시 생성기를 사용하는 테스트
 		* 자동 프록시 생성기라는 스프링 컨테이너에 종속적인 기법을 사용했기 때문에 예외상황을 위한 테스트 대상도 빈으로 등록해야 한다.
 		* TestUserService가 UserServiceTest 클래스 내부에 정의된 스태틱 클래스라는 문제가 있다.
-		* 또한, \*ServiceImpl이라고 되어 있어 TestUserService는 프록시 적용 대상으로 선정되지 않는 문제가 있따.
-		```
+		* 또한, ServiceImpl이라고 되어 있어 TestUserService는 프록시 적용 대상으로 선정되지 않는 문제가 있다.
+		```java
 		// 수정한 테스트용 UserService 구현 클래스
 		static class TestUserServiceImpl extends UserServiceImpl { // 클래스 필터에 선정되도록 Impl로 이름 변경
 			private String id = "madnite1";
@@ -270,9 +281,10 @@ comments: true
 		* 아무 빈에나 트랜잭션 부가기능이 적용된 것은 아닌지 확인
 * 6.5.3 포인트컷 표현식을 이용한 포인트컷
 	* 포인트컷 표현식
+		
 		* 포인트컷 표현식: 정규식이나 JSP의 EL과 비슷한 일종의 표현식 언어를 사용해서 포인트컷을 작성할 수 있도록 하는 방법
 	* 포인트컷 표현식 문법
-		* execution([접근제한자 패턴] 타입패턴 [타입패턴.]이름패턴 (타입패턴 | "..", ...)) [throws 예외 패턴]
+		* execution([접근제한자 패턴] 타입패턴 [타입패턴.]이름패턴 (타입패턴 \| "..", ...)) [throws 예외 패턴]
 		* ex) public int springbook.learningtest.spring.pointcut.Target.minus(int,int) throws java.lang.RuntimeException
 			* public: 접근제한자, 생략 가능
 			* int: 리턴 값의 타입을 나타내는 패턴, 생략 불가
@@ -281,18 +293,20 @@ comments: true
 			* (int, int): 메소드 파라미터 패턴, 필수
 			* throws java.lang.RuntimeException: 예외 타입 패턴, 생략 가능
 		* 메소드 시그니처를 이용한 포인트컷 표현식 테스트
-			```
+			```java
 			pointcut.setExpression("execution(public int " +
 				springbook.learningtest.spring.pointcut.Target.minus(int,int) " +
 				throws java.lang.RuntimeException");
 			```
 		* 포인트컷 표현식 테스트
+			
 			* 필수가 아닌 항목 제외 -> execution(int minus(int, int))
 		* 포인트컷 표현식을 이용하는 포인트컷 적용
 			* 빈의 이름, 애노테이션 타입, 메소드, 파라미터에 적용되어 있는 것을 보고 메소드를 선정하게 하는 포인트컷 생성 가능
-			* 포인트컷 표현식을 사용하면 로직이 짧은 문장ㄹ에 담기기 떄문에 클래스나 코드를 추가할 필요가 없어서 코드와 설정이 모두 단순해진다.
+			* 포인트컷 표현식을 사용하면 로직이 짧은 문장에 담기기 떄문에 클래스나 코드를 추가할 필요가 없어서 코드와 설정이 모두 단순해진다.
 			* 문자열로 된 표현식이므로 런타임 시점까지 문법의 검증이나 기능 확인이 되지 않는다는 단점이 있다.
 		* 타입 패턴과 클래스 이름 패턴
+			
 			* 포인트컷 표현식에서 타입 패턴이라고 명시된 부분은 모두 동일한 원리가 적용된다.
 * 6.5.4 AOP랑 무엇인가?
 	* 트랜잭션 서비스 추상화
@@ -374,13 +388,13 @@ comments: true
 ## 6.7 애노테이션 트랜잭션 속성과 포인트컷
 
 * 6.7.1 트랜잭션 애노테이션
-	* **@Transactional**
+	* `@Transactional
 		* 메소드, 클래스, 인터페이스에 사용 가능
 	* 트랜잭션 속성을 이용하는 포인트컷
 		* 트랜잭션 부가기능 적용 단위는 메소드
-		* 메소드마다 @Transactional을 부여하고 속성을 지정할 수 있지만 지저분해짐
+		* 메소드마다 `@Transactional`을 부여하고 속성을 지정할 수 있지만 지저분해짐
 	* 대체 정책
-		* 메소드의 속성을 확인할 떄 타깃 메소드, 타깃 클래스, 선언 메소드, 선언 타입의 순서에 따라서 @Transactional이 적용됐는지 확인하고, 가장 먼저 발견되는 속성정보를 사용하게 하는 방법
+		* 메소드의 속성을 확인할 때 타깃 메소드, 타깃 클래스, 선언 메소드, 선언 타입의 순서에 따라서 `@Transactional`이 적용됐는지 확인하고, 가장 먼저 발견되는 속성정보를 사용하게 하는 방법
 	* 트랜잭션 애노테이션 사용을 위한 설정
 		* \<tx:annotation-driven/>
 * 6.7.2 트랜잭션 애노테이션 적용
@@ -392,9 +406,9 @@ comments: true
 	* 프로그램에 의한 트랜잭션(programmatic transaction): TransactionTemplate이나 개별 데이터 기술의 트랜잭션 API를 사용해 적접 코드 안에서 사용하는 방법
 * 6.8.2 트랜잭션 동기화와 테스트
 	* 트랜잭션 매니저와 트랜잭션 동기화
-		* PlatformTransactionManager 인터페이스를 구현한 트랜잭션 메니저를 통해 구체적은 트랜잭션 기술의 종류에 상관없이 일관된 트랜잭션 제어가 가능
+		* PlatformTransactionManager 인터페이스를 구현한 트랜잭션 메니저를 통해 구체적인 트랜잭션 기술의 종류에 상관없이 일관된 트랜잭션 제어가 가능
 		* 트랜잭션 동기화 기술이 있었기에 시작된 트랜잭션 정보를 저장소에 보관해뒀다가 DAO에서 공유할 수 있었다.
-		* 클래스에 @AutoWired를 이용해 애플리케이션 컨텍스트에 등록된 빈을 가져와 테스트
+		* 클래스에 `@AutoWired`를 이용해 애플리케이션 컨텍스트에 등록된 빈을 가져와 테스트
 		* 3개의 메소드가 실행되면 트랜잭션이 3개 생성됨
 	* 트랜잭션 매니저를 이용한 테스트용 트랜잭션 제어
 		* 세 개의 트랜잭션을 하나로 통합할 수 없을까?
@@ -408,15 +422,15 @@ comments: true
 		* 롤백 테스트는 DB 작업이 포함된 테스트가 수행돼도 DB에 영향을 주지 않기 때문에 장점이 많다.
 		* 롤백 테스트는 테스트를 진행하는 동안에 조작한 데이터를 모두 롤백하고 테스트를 시작하기 전 상태로 만들어주기 때문에 유용
 * 6.8.3 **테스트를 위한 트랜잭션 애노테이션**
-	* @Transactional
-	* @Rollback
-		* 테스트용 @Transactional은 기본적으로 트랜잭션을 강제 롤백시키도록 설정되어 있다.
-		* 트랜잭션을 커밋시켜서 테스트에서 진행한 작업을 그대로 DB에 반영하고 싶을 떄 @Rollback(false) 사용
-	* @TransactionConfiguraiton
-		* @TransactionConfiguraiton을 사용하면 롤백에 대한 공통 속성을 지정할 수 있다.
+	* `@Transactional`
+	* `@Rollback`
+		* 테스트용 `@Transactional`은 기본적으로 트랜잭션을 강제 롤백시키도록 설정되어 있다.
+		* 트랜잭션을 커밋시켜서 테스트에서 진행한 작업을 그대로 DB에 반영하고 싶을 때 `@Rollback(false)` 사용
+	* `@TransactionConfiguraiton`
+		* `@TransactionConfiguraiton`을 사용하면 롤백에 대한 공통 속성을 지정할 수 있다.
 	* NotTransactional과 Propagation.NEVER
-		* @NotTransactional을 테스트 메소드에 부여하면 클래스 레빌의 @Transactional을 무시하고 트랜잭션을 시작하지 않은 채로 테스트를 진행
-		* @NotTransactional 대신 전파 속성을 Propagation.NEVER로 설정 가능
+		* `@NotTransactional`을 테스트 메소드에 부여하면 클래스 레벨의 `@Transactional`을 무시하고 트랜잭션을 시작하지 않은 채로 테스트를 진행
+		* `@NotTransactional` 대신 전파 속성을 Propagation.NEVER로 설정 가능
 	* 효과적인 DB 테스트
 		* 단위 테스트와 통합 테스트는 클래스를 구분하는 것이 좋음
-		* DB가 사용되는 통합 테스트를 별도의 클래스로 만들어둔다면 기본적으로 클래스 레벨에 @Transactional을 부여
+		* DB가 사용되는 통합 테스트를 별도의 클래스로 만들어둔다면 기본적으로 클래스 레벨에 `@Transactional`을 부여

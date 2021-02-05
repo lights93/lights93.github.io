@@ -21,6 +21,7 @@ comments: true
 ## 3.2 변하는 것과 변하지 않는 것
 
 * 3.2.1 JDBC try/catch/finally 코드의 문제점
+	
 	* try/catch/finally가 너무 많아 실수할 가능성이 높음
 * 3.2.2 분리와 재사용을 위한 디자인 패턴 적용
 	* 메소드 추출
@@ -31,12 +32,12 @@ comments: true
 	* **전략 패턴의 적용**
 		* 오브젝트를 아예 둘로 분리하고 클래스 레벨에서는 인터페이스를 통해서만 의존하도록 만드는 전략 패턴 사용
 		* 전략 패턴은 필요에 따라 컨텍스트는 그대로 유지되면서 전략을 바꿔 쓸 수 있다는 것인데, 컨텍스트 안에서 이미 구체적인 전략 클래스를 사용하도록 고정되기 때문에 문제가 있다.
-	```
+	```java
 	public interface StatementStrategy {
 		PreparedStatement makePreparedStatement(Conncetion c) throws SQLException;
 	}
 	```
-	```
+	```java
 	public class DeleteAllStatement implements StatementStrategy {
 		public PreparedStatement makePreparedStatement(Connection c) throws SQLException {
 			PreparedStatement ps = c.prepareStatement("delete from users");
@@ -49,7 +50,7 @@ comments: true
 		* 클라이언트가 컨텍스트가 사용할 전략을 정해서 전달하기 때문에 DI구조
 
 ## 3.3 JDBC 전략 패턴의 최적화
-	
+
 * 3.3.1 전략 클래스의 추가 정보
 	* add()에도 전략 패턴을 적용, User 정보가 필요하기 때문에 StatementStrategy를 상속받은 AddStatement에서 User에 관한 정보를 생성자로부터 제공받는다.
 * 3.3.2 전략과 클라이언트의 동거
@@ -80,7 +81,7 @@ comments: true
 
 ## 3.5 템플릿과 콜백
 
-**템플릿/콜백 패턴**: 전략패턴의 개본 구조에 익명 내부 클래스를 활용한 방식 
+**템플릿/콜백 패턴**: 전략패턴의 기본 구조에 익명 내부 클래스를 활용한 방식 
 
 * 템플릿: 고정된 틀 안에 바꿀 수 있는 부분을 넣어서 사용하는 경우
 * 콜백: 실행되는 것을 목적으로 다른 오브젝트의 메소드에 전달되는 오브젝트
@@ -102,7 +103,7 @@ comments: true
 	* **제네릭스** 응용: 타입이 다양하게 바뀔 수 있다면 사용
 
 ## 3.6 스프링의 JdbcTemplate
-	
+
 * 3.6.1 update()
 * 3.6.2 queryForInt()
 * 3.6.3 queryForObject()

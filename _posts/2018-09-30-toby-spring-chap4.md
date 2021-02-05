@@ -51,7 +51,7 @@ comments: true
 ## 4.2 예외 전환
 
 * 4.2.1 JDBC의 한계
-	* DB를 자유롭게 변겨해서 사용할 수 있는 유연한 코드를 보장해주지 못하는 한계가 있다.
+	* DB를 자유롭게 변경해서 사용할 수 있는 유연한 코드를 보장해주지 못하는 한계가 있다.
 	* 비표준 SQL
 		* 대부분의 DB는 표준을 따르지 않는 비표준 문법과 기능을 제공한다.
 	* 호환성 없는 SQLException의 DB 에러정보
@@ -71,7 +71,7 @@ comments: true
 * 4.2.4 기술에 독립적인 UserDao 만들기
 	* 인터페이스 적용
 		* UserDao 인터페이스
-		```
+		```java
 		public interface UserDao {
 			void add(User user);
 			User get(String id);
