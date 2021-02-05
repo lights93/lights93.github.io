@@ -126,5 +126,5 @@ JVM 세계에서 리액티브 시스템을 구축하는 데 쓰이는 가장 널
 ## 참조
 
 1. 실전! 스프링5를 활용한 리액티브 프로그래밍
-2. https://www.reactivemanifesto.org/ko/glossary
-3. https://microservices.io/patterns/
+2. [리액티브 선언문](https://www.reactivemanifesto.org/ko/glossary)
+3. [마이크로 서비스 패턴](https://microservices.io/patterns/)

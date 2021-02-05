@@ -5,7 +5,6 @@ date: 2019-12-19
 excerpt: "스프링을 이용한 리액티브 프로그래밍 - 기본 개념"
 tags: [Reactive, Spring5]
 comments: true
-
 ---
 
 # 2. 스프링을 이용한 리액티브 프로그래밍 - 기본 개념
@@ -38,9 +37,9 @@ registerObserver 및 unregisterObserver 메서드를 이용해 수정이 가능
 
 Java.util 에 포함된 Observer를 사용하거나 직접 구현하는 것보다는 믿을 수 있는 조직에서 제공하는 좀 더 성숙한 구현체를 사용하는 것이 좋다.
 
-### @EventListener를 사용한 발행-구독 패턴
+### `@EventListener`를 사용한 발행-구독 패턴
 
-스프링 프레임워크는 이벤트 처리를 위한 @EventListener 애노테이션과 이벤트 발행을 위한 ApplicationEventListener 클래스 제공
+스프링 프레임워크는 이벤트 처리를 위한 `@EventListener` 애노테이션과 이벤트 발행을 위한 ApplicationEventListener 클래스 제공
 
 관찰자 패턴의 변형으로 보일수도 있지만, **발행-구독 패턴**을 구현한 것
 
@@ -56,7 +55,7 @@ Java.util 에 포함된 Observer를 사용하거나 직접 구현하는 것보�
 
 이벤트 채널은 수신 메시지를 구독자에게 배포하기 전에 필터링 가능
 
-### @EventListener를 활용한 응용 프로그램 개발
+### `@EventListener`를 활용한 응용 프로그램 개발
 
 **리액티브 디자인**에 따라 애플리케이션을 만들어야 하므로 고전적인 방식의 풀링 모델 사용 불가능
 
