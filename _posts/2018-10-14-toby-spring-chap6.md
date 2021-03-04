@@ -15,11 +15,12 @@ comments: true
 	
 	* 트랜잭션 경계설정의 코드와 비즈니스 로직 코드 간에 서로 주고받는 정보가 없기 때문에 분리 가능
 * 6.1.2 DI를 이용한 클래스의 분리
+	
 	* DI 적용을 이용한 트랜잭션 분리
 		* 한 번에 두 개의 UserService 인터페이스 구현 클래스 이용(UserServiceImpl, UserServiceTx)
 	* UserService 인터페이스 도입
 	```java
-	10.113.116.52public interface UserService {
+	public interface UserService {
 		void add(User user);
 		void upgradeLevels();
 	}
@@ -388,7 +389,7 @@ comments: true
 ## 6.7 애노테이션 트랜잭션 속성과 포인트컷
 
 * 6.7.1 트랜잭션 애노테이션
-	* `@Transactional
+	* `@Transactional`
 		* 메소드, 클래스, 인터페이스에 사용 가능
 	* 트랜잭션 속성을 이용하는 포인트컷
 		* 트랜잭션 부가기능 적용 단위는 메소드
