@@ -1,7 +1,7 @@
 # Site
-title:              mino
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              minho Yoo(유민호)
+bio:                'Java server Developer'
+description:        "Java Server Developer"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
@@ -71,6 +71,10 @@ gems:
 
 jekyll-mentions:
     base_url: https://github.com
+
+# plugins
+plugins : 
+  - jekyll-sitemap
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
