@@ -72,9 +72,6 @@ gems:
 jekyll-mentions:
     base_url: https://github.com
 
-# plugins
-plugins : 
-  - jekyll-sitemap
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
