@@ -2,7 +2,7 @@
 layout: post
 title: "JVM 이야기"
 date: 2021-03-02
-excerpt: "JVM 이야기"
+excerpt: "자바 최적화"
 tags: [java, optimization]
 comments: true
 ---

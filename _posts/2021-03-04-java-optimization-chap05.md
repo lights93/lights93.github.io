@@ -2,7 +2,7 @@
 layout: post
 title: "마이크로벤치마킹과 통계"
 date: 2021-03-04
-excerpt: "마이크로벤치마킹과 통계"
+excerpt: "자바 최적화"
 tags: [java, optimization]
 comments: true
 ---
