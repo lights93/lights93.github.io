@@ -1,4 +1,4 @@
 # Allow crawling of all content
  User-agent: *
  Allow: /
- Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }}
+ Sitemap: https://lights93.github.io/sitemap.xml
