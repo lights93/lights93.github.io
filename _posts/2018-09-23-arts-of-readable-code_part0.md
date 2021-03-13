@@ -1,11 +1,14 @@
 ---
-layout: post
 title: "읽기 좋은 코드가 좋은 코드다 part0"
-date: 2018-09-23
-excerpt: "읽기 좋은 코드가 좋은 코드다 part0"
-tags: [artsOfReadableCode]
-comments: true
+categories:
+  - artsOfReadableCode
+tags:
+  - artsOfReadableCode
 ---
+
+
+
+
 
 # 1. 코드는 이해하기 쉬워야 한다
 
