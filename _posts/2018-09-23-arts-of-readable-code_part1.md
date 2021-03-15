@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "읽기 좋은 코드가 좋은 코드다 part1"
 date: 2018-09-23
 excerpt: "읽기 좋은 코드가 좋은 코드다 part1"

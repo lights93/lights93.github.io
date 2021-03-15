@@ -6,10 +6,6 @@ tags:
   - artsOfReadableCode
 ---
 
-
-
-
-
 # 1. 코드는 이해하기 쉬워야 한다
 
 * ## 가독성의 기본 정리
