@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "주식투자 선물/옵션"
 date: 2021-01-12
 excerpt: "주식투자 선물/옵션"
-tags: [stock]
-comments: true
+categories:
+  - stock
+tags:
+  - stock
 ---
 
 ## 내용 정리

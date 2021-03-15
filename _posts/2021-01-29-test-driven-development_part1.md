@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "TDD 화폐 예제"
 date: 2021-01-29
 excerpt: "테스트 주도 개발"
-tags: [tdd]
-comments: true
+categories:
+  - tdd
+tags:
+  - tdd
 ---
 
 # 1. 화폐 예제

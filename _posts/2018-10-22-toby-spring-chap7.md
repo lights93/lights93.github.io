@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "토비의 스프링 7장"
 date: 2018-10-22
 excerpt: "스프링 핵심 기술의 응용"
-tags: [tobySpring]
-comments: true
+categories:
+  - spring
+tags:
+  - tobySpring
 ---
 
 # 7. 스프링 핵심 기술의 응용

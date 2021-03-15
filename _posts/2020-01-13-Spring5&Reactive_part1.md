@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "왜 리액티브 프로그래밍인가?"
 date: 2019-12-19
 excerpt: "왜 리액티브 프로그래밍인가?"
-tags: [Reactive, Spring5]
-comments: true
+categories:
+  - spring
+tags:
+  - Reactive
+  - spring
 ---
 
 # 1. 왜 리액티브 프로그래밍인가?

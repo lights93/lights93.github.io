@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "구직을 시작하기 전에"
 date: 2020-02-15
 excerpt: "프로그래밍 인터뷰"
-tags: [Interview]
-comments: true
+categories:
+  - Interview
+tags:
+  - Interview
 ---
 
 # 1. 구직을 시작하기 전에

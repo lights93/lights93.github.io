@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "두 가지 가치에 대한 이야기"
 date: 2020-01-13
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 2. 두 가지 가치에 대한 이야기

@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "소프트 스킬 리뷰"
 date: 2021-01-12
 excerpt: "소프트 스킬"
-tags: [softskill, review]
-comments: true
+categories:
+  - review
+tags:
+  - softskill
+  - review
 ---
 
 ## 내용 정리

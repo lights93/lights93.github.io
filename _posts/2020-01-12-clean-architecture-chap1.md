@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "설계와 아키텍처란?"
 date: 2020-01-12
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 1. 설계와 아키텍처란?

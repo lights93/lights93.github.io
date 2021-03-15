@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "심플 소프트웨어 리뷰"
 date: 2021-01-25
 excerpt: "심플 소프트웨어"
-tags: [simplesoftware, review]
-comments: true
+categories:
+  - review
+tags:
+  - simplesoftware
+  - review
 ---
 
 ## 내용 정리

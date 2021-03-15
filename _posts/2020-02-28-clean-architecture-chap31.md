@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "웹은 세부사항이다"
 date: 2020-02-28
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 31. 웹은 세부사항이다

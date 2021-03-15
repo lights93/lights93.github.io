@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "패러다임 개요"
 date: 2020-02-05
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 3. 패러다임 개요

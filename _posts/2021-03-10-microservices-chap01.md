@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "마이크로서비스 소개"
 date: 2021-03-10
 excerpt: "마이크로서비스"
-tags: [microservice]
-comments: true
+categories:
+  - microservice
+tags:
+  - microservice
 ---
 
 # 1. 마이크로서비스 소개

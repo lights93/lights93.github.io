@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "쿠버네티스 입문"
 date: 2019-12-17
 excerpt: "쿠버네티스 입문"
-tags: [Docker, Kubernetes]
-comments: true
-
+categories:
+  - Docker
+tags:
+  - Docker
+  - Kubernetes
 ---
 
 # 5. 쿠버네티스 입문

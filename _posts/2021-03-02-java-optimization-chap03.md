@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "하드웨어와 운영체제"
 date: 2021-03-02
 excerpt: "자바 최적화"
-tags: [java, optimization]
-comments: true
+categories:
+  - java
+tags:
+  - optimization
+  - java
 ---
 
 # 3. 하드웨어와 운영체제

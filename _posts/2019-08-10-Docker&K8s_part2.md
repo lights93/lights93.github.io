@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "도커 컨테이너 배포"
 date: 2019-08-10
 excerpt: "도커 컨테이버 배포"
-tags: [Docker, Kubernetes]
-comments: true
+categories:
+  - Docker
+tags:
+  - Docker
+  - Kubernetes
 ---
 
 # 2. 도커 컨테이너 배포

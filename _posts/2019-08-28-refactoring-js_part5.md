@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "기본적인 리팩토링 목표"
 date: 2019-08-28
 excerpt: "기본적인 리팩토링 목표"
-tags: [JavaScript, RefactroingJS]
-comments: true
+categories:
+  - JavaScript
+tags:
+  - JavaScript
+  - RefactroingJS
 ---
 
 # 5. 기본적인 리팩토링 목표
@@ -168,7 +170,7 @@ this는 최상위 범위
        Object.create(null, {"number": {value: 5},
        "getNumber": {value: function(){return this.number}}});
    console.log(anObject.getNumber());
-   ```
+  ```
 
 3. 클래스
 
@@ -410,4 +412,5 @@ private 변수와 _unlock 함수가 노출됨
 
 리팩토링 자바스크립트(Refactoring JavaScript)
 
-[링크](https://github.com/gilbutITbook/006963/tree/master/ch05).
+[링크](https://github.com/gilbutITbook/006963/tree/master/ch05)
+

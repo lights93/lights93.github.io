@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "메시지와 인터페이스"
 date: 2020-06-17
 excerpt: "오브젝트"
-tags: [object]
-comments: true
+categories:
+  - object
+tags:
+  - object
 ---
 
 # 6. 메시지와 인터페이스

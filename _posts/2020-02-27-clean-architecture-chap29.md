@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "클린 임베디드 아키텍처"
 date: 2020-02-27
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 29. 클린 임베디드 아키텍처

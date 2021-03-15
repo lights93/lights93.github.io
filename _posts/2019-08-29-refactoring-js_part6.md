@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "간단한 구조 리팩토링"
 date: 2019-08-29
 excerpt: "간단한 구조 리팩토링"
-tags: [JavaScript, RefactroingJS]
-comments: true
-
+categories:
+  - JavaScript
+tags:
+  - JavaScript
+  - RefactroingJS
 ---
 
 # 6. 간단한 구조 리팩토링

@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "객체 지향 프로그래밍"
 date: 2020-02-05
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 5. 객체 지향 프로그래밍

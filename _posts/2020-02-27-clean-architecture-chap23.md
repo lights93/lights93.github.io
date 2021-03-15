@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "프레젠터와 험블 객체"
 date: 2020-02-27
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 23. 프레젠터와 험블 객체

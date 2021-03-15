@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "컴포넌트 응집도"
 date: 2020-02-07
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 13. 컴포넌트 응집도

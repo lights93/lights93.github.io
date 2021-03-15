@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "설계 품질과 트레이드오프"
 date: 2020-06-05
 excerpt: "오브젝트"
-tags: [object]
-comments: true
+categories:
+  - object
+tags:
+  - object
 ---
 
 # 4. 설계 품질과 트레이드오프

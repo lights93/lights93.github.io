@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "빠져 있는 장"
 date: 2020-02-28
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 34. 빠져 있는 장

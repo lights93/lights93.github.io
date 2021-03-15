@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "전화 예비 면접"
 date: 2020-02-15
 excerpt: "프로그래밍 인터뷰"
-tags: [Interview]
-comments: true
+categories:
+  - Interview
+tags:
+  - Interview
 ---
 
 # 3. 전화 예비 면접

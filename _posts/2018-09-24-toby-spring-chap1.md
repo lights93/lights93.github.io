@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "토비의 스프링 1장"
 date: 2018-09-24
 excerpt: "오브젝트와 의존관계"
-tags: [tobySpring]
-comments: true
+categories:
+  - spring
+tags:
+  - tobySpring
 ---
 
 # 1. 오브젝트와 의존관계

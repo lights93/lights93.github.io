@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "JVM 이야기"
 date: 2021-03-02
 excerpt: "자바 최적화"
-tags: [java, optimization]
-comments: true
+categories:
+  - java
+tags:
+  - optimization
+  - java
 ---
 
 # 2. JVM 이야기

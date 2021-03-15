@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "LSP: 리스코프 치환 원칙"
 date: 2020-02-06
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 9. LSP: 리스코프 치환 원칙

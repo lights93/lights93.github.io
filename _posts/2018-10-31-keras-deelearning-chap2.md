@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "신경망의 수학적 구성 요소"
 date: 2018-10-31
 excerpt: "신경망의 수학적 구성 요소"
-tags: [Keras, deepLearning]
-comments: true
+categories:
+  - AI
+tags:
+  - Keras
+  - deepLearning
 ---
 
 # 2. 시작하기 전에: 신경망의 수학적 구성 요소
@@ -61,6 +63,7 @@ comments: true
 	* **벡터(vector)**: 숫자의 배열
 	* 차원수(dimensionallity): 특정 축을 따라 놓인 원소의 개수이거나 텐서의 축 개수를 의미하여 혼동하기 쉬움
 * 2.2.3 행렬(2D 텐서)
+	
 	* **행렬(matrix)**: 벡터의 배열
 * 2.2.4 3D 텐서와 고차원 텐서
 * 2.2.5 핵심 속성
@@ -85,13 +88,16 @@ comments: true
 	* 이미지: (samples, height, width, channels) 또는 (samples, channels, height, width) 크기의 4D 텐서
 	* 동영상: (samples, frames, height, width, channels) 또는 (samples, frames, channels, height, width) 크기의 5D 텐서
 * 2.2.9 벡터 데이터
+	
 	* ex. 사람의 나이, 우편번호, 소득/ 10만명 => (100000, 3)
 * 2.2.10 시계열 데이터 또는 시퀀스 데이터
+	
 	* ex. 주식 가격 데이터셋(1분마다 현재 주식 가격, 지난 1분동안에 최고 가격, 최소 가격)/하루의 거래 시간은 390분/250일 => (250, 390, 3)
 * 2.2.11 이미지 데이터
 	* 높이, 너비, 컬러 채녈의 3차원
 	* ex. 256X256 크기의 RGB/128 개의 배치 => 채녈 마지막(128, 256, 256, 3)/ 채널 우선(128, 3, 256, 256)
 * 2.2.12 비디오 데이터
+	
 	* ex. 60초/144X256/4프레임으로 샘플링하면 240프레임 => (4, 240, 144, 256, 3)
 
 ## 2.3 신경망의 톱니바퀴: 텐서 연산
@@ -167,5 +173,5 @@ comments: true
 	* 연쇄 법칙을 신경망의 그래디언트 계산에 적용하여 **역전파(backpropagation) 알고리즘** 탄생
 
 ## 2.5 첫 번째 예제 다시 살펴보기
-	
+
 ![테스트](/assets/img/2.5.png)    

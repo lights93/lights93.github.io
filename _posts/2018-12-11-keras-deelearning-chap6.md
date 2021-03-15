@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "텍스트와 시퀀스를 위한 딥러닝"
 date: 2018-12-11
 excerpt: "텍스트와 시퀀스를 위한 딥러닝"
-tags: [Keras, deepLearning]
-comments: true
+categories:
+  - AI
+tags:
+  - Keras
+  - deepLearning
 ---
 
 # 6. 텍스트와 시퀀스를 위한 딥러닝

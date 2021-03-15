@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "SRP: 단일 책임 원칙"
 date: 2020-02-06
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 7. SRP: 단일 책임 원칙

@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "컴퓨터 비전을 위한 딥러닝"
 date: 2018-11-14
 excerpt: "컴퓨터 비전을 위한 딥러닝"
-tags: [Keras, deepLearning]
-comments: true
+categories:
+  - AI
+tags:
+  - Keras
+  - deepLearning
 ---
 
 # 5. 컴퓨터 비전을 위한 딥러닝

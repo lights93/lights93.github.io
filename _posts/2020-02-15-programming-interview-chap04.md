@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "프로그래밍 문제 접근법"
 date: 2020-02-15
 excerpt: "프로그래밍 인터뷰"
-tags: [Interview]
-comments: true
+categories:
+  - Interview
+tags:
+  - Interview
 ---
 
 # 4. 프로그래밍 문제 접근법

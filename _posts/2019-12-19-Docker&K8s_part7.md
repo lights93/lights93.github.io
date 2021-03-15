@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "쿠버네티스 실전편"
 date: 2019-12-19
 excerpt: "쿠버네티스 실전편"
-tags: [Docker, Kubernetes]
-comments: true
-
-
+categories:
+  - Docker
+tags:
+  - Docker
+  - Kubernetes
 ---
 
 # 7. 쿠버네티스 실전편

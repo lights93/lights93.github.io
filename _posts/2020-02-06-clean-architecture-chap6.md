@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "함수형 프로그래밍"
 date: 2020-02-06
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 6. 함수형 프로그래밍

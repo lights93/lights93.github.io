@@ -1,10 +1,13 @@
 ---
-layout: post
 title: "Attention 논문 정리"
 date: 2019-06-07
 excerpt: "Attention 논문 정리"
-tags: [BERT, Attention, deepLearning]
-comments: true
+categories:
+  - AI
+tags:
+  - BERT
+  - deepLearning
+  - Attention
 ---
 
 # Attention Is All You Need
@@ -245,7 +248,7 @@ u(k)는 label에 대한 분포/ δk,y는 k가 y일 경우 1, 나머지는 0 / ϵ
  encoder와 decoder에서 attention을 통해 query와 가장 밀접한 연관성을 가지는 value 강조
 
  병렬화 가능
- 
+
 ## 참고자료
 1. https://mchromiak.github.io/articles/2017/Sep/12/Transformer-Attention-is-all-you-need/#.XO5AlIgzaUl
 2. https://pozalabs.github.io/transformer/

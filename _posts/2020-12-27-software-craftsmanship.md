@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "소프트웨어 장인정신 리뷰"
 date: 2020-12-27
 excerpt: "소프트웨어 장인정신"
-tags: [craftsman, review]
-comments: true
-
+categories:
+  - review
+tags:
+  - craftsman
+  - review
 ---
 
 ## 내용 정리

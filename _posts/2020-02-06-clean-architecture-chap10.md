@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "ISP: 인터페이스 분리 원칙"
 date: 2020-02-06
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 10. ISP: 인터페이스 분리 원칙

@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "토비의 스프링 2장"
 date: 2018-09-24
 excerpt: "테스트"
-tags: [tobySpring]
-comments: true
+categories:
+  - spring
+tags:
+  - tobySpring
 ---
 
 # 2. 테스트

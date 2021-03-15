@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "신경망 시작하기"
 date: 2018-11-03
 excerpt: "신경망 시작하기"
-tags: [Keras, deepLearning]
-comments: true
+categories:
+  - AI
+tags:
+  - Keras
+  - deepLearning
 ---
 
 # 3. 신경망 시작하기
@@ -107,8 +109,10 @@ comments: true
 	```
 	* 과대적합(overfitting): 훈련 데이터에 과도하게 최적화되어 훈련 데이터에 특화된 표현을 학습하므로 훈련 세트 이외의 데이터에는 일반화되지 못하는 것
 * 3.4.5 훈련된 모델로 새로운 데이터에 대해 예측하기
+	
 	* model.predict(x_test)
 * 3.4.6 추가 실험
+	
 	* 층 개수 수정, 은닉 유닛 수정, 손실함수 수정 등...
 * 3.4.7 정리
 	* 원본 데이터를 신경망에 텐서로 주입하기 위해서는 꽤 많은 전처리가 필요

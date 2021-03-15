@@ -3,8 +3,11 @@ layout: post
 title: "어떤 자바스크립트를 사용하고 있을까?"
 date: 2019-07-30
 excerpt: "어떤 자바스크립트를 사용하고 있을까?"
-tags: [JavaScript, RefactroingJS]
-comments: true
+categories:
+  - JavaScript
+tags:
+  - JavaScript
+  - RefactroingJS
 ---
 
 # 2. 어떤 자바스크립트를 사용하고 있을까?

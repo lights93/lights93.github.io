@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "책임 할당하기"
 date: 2020-06-12
 excerpt: "오브젝트"
-tags: [object]
-comments: true
+categories:
+  - object
+tags:
+  - object
 ---
 
 # 5. 책임 할당하기

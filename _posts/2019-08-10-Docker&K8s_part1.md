@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "도커의 기초"
 date: 2019-08-10
 excerpt: "도커의 기초"
-tags: [Docker, Kubernetes]
-comments: true
+categories:
+  - Docker
+tags:
+  - Docker
+  - Kubernetes
 ---
 
 # 1. 도커의 기초

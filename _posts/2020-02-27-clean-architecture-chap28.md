@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "테스트 경계"
 date: 2020-02-27
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 28. 테스트 경계

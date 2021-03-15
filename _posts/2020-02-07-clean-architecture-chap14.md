@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "컴포넌트 결합"
 date: 2020-02-07
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 14. 컴포넌트 결합

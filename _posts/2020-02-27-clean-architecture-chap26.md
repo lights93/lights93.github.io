@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "메인(Main) 컴포넌트"
 date: 2020-02-27
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 26. 메인(Main) 컴포넌트

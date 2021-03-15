@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "성능과 최적화"
 date: 2020-05-22
 excerpt: "자바 최적화"
-tags: [java, optimization]
-comments: true
+categories:
+  - java
+tags:
+  - optimization
+  - java
 ---
 
 # 1. 성능과 최적화

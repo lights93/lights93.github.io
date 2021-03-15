@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "객체지향 프로그래밍"
 date: 2020-05-29
 excerpt: "오브젝트"
-tags: [object]
-comments: true
+categories:
+  - object
+tags:
+  - object
 ---
 
 # 2. 객체지향 프로그래밍

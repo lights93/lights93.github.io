@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "의존성 관리하기"
 date: 2020-07-07
 excerpt: "오브젝트"
-tags: [object]
-comments: true
+categories:
+  - object
+tags:
+  - object
 ---
 
 # 8. 의존성 관리하기

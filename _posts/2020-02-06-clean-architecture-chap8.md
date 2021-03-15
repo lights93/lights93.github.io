@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "OCP: 개방-폐쇄 원칙"
 date: 2020-02-06
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 8. OCP: 개방-폐쇄 원칙

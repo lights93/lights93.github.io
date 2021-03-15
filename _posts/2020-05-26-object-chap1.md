@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "객체, 설계"
 date: 2020-05-26
 excerpt: "오브젝트"
-tags: [object]
-comments: true
+categories:
+  - object
+tags:
+  - object
 ---
 
 # 1. 객체, 설계

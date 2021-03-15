@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "공조 마이크로서비스 집합 생성"
 date: 2021-03-15
 excerpt: "마이크로서비스"
-tags: [microservice]
-comments: true
+categories:
+  - microservice
+tags:
+  - microservice
 ---
 
 # 3. 공조 마이크로서비스 집합 생성

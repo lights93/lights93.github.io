@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "토비의 스프링 8장"
 date: 2018-11-06
 excerpt: "스프링이란 무엇인가?"
-tags: [tobySpring]
-comments: true
+categories:
+  - spring
+tags:
+  - tobySpring
 ---
 
 # 8. 스프링이란 무엇인가?

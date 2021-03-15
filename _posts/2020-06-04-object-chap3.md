@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "역할, 책임, 협력"
 date: 2020-06-04
 excerpt: "오브젝트"
-tags: [object]
-comments: true
+categories:
+  - object
+tags:
+  - object
 ---
 
 # 3. 역할, 책임, 협력

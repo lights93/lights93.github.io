@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "스프링 부트 소개"
 date: 2021-03-11
 excerpt: "마이크로서비스"
-tags: [microservice]
-comments: true
+categories:
+  - microservice
+tags:
+  - microservice
 ---
 
 # 2. 스프링 부트 소개

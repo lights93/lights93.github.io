@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "머신 러닝의 기본 요소"
 date: 2018-11-11
 excerpt: "머신 러닝의 기본 요소"
-tags: [Keras, deepLearning]
-comments: true
+categories:
+  - AI
+tags:
+  - Keras
+  - deepLearning
 ---
 
 # 4. 머신 러닝의 기본 요소

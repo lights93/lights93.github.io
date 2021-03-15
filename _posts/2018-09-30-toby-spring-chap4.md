@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "토비의 스프링 4장"
 date: 2018-09-30
 excerpt: "예외"
-tags: [tobySpring]
-comments: true
+categories:
+  - spring
+tags:
+  - tobySpring
 ---
 
 # 4. 예외

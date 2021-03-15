@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "업무 규칙"
 date: 2020-02-26
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 20. 업무 규칙

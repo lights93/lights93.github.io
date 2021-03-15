@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "DIP: 의존성 역전 원칙"
 date: 2020-02-07
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 11. DIP: 의존성 역전 원칙

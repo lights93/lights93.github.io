@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "테스트"
 date: 2019-08-27
 excerpt: "테스트"
-tags: [JavaScript, RefactroingJS]
-comments: true
-
+categories:
+  - JavaScript
+tags:
+  - JavaScript
+  - RefactroingJS
 ---
 
 # 3. 테스트

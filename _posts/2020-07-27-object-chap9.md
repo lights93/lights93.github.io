@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "유연한 설계"
 date: 2020-07-27
 excerpt: "오브젝트"
-tags: [object]
-comments: true
+categories:
+  - object
+tags:
+  - object
 ---
 
 # 9. 유연한 설계

@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "객체 분해"
 date: 2020-06-18
 excerpt: "오브젝트"
-tags: [object]
-comments: true
+categories:
+  - object
+tags:
+  - object
 ---
 
 # 7. 객체 분해

@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "읽기 좋은 코드가 좋은 코드다 part4"
 date: 2018-09-23
 excerpt: "읽기 좋은 코드가 좋은 코드다 part4"
-tags: [artsOfReadableCode]
-comments: true
+categories:
+  - CodeReadability
+tags:
+  - artsOfReadableCode
 ---
 
 # 선택된 주제들

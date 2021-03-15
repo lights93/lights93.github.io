@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "리팩토링이란?"
 date: 2019-07-24
 excerpt: "리팩토링이란?"
-tags: [JavaScript, RefactroingJS]
-comments: true
+categories:
+  - JavaScript
+tags:
+  - JavaScript
+  - RefactroingJS
 ---
 
 # 1. 리팩토링이란?

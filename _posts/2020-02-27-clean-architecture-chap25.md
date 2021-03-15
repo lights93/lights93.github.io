@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "계층과 경계"
 date: 2020-02-27
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 25. 계층과 경계

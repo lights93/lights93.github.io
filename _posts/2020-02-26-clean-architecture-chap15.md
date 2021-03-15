@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "아키텍처란?"
 date: 2020-02-26
 excerpt: "클린 아키텍처"
-tags: [Architecture]
-comments: true
+categories:
+  - Architecture
+tags:
+  - Architecture
 ---
 
 # 15. 아키텍처란?

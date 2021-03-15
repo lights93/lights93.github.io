@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "성능 테스트 패턴 및 안티패턴"
 date: 2021-03-03
 excerpt: "자바 최적화"
-tags: [java, optimization]
-comments: true
+categories:
+  - java
+tags:
+  - optimization
+  - java
 ---
 
 # 4. 성능 테스트 패턴 및 안티패턴

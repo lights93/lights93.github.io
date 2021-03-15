@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "스트림의 새로운 표준 - 리액티브 스트림"
 date: 2019-12-19
 excerpt: "스트림의 새로운 표준 - 리액티브 스트림"
-tags: [Reactive, Spring5]
-comments: true
-
+categories:
+  - spring
+tags:
+  - Reactive
+  - spring
 ---
 
 # 3. 스트림의 새로운 표준 - 리액티브 스트림
