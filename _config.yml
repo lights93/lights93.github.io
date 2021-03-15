@@ -95,14 +95,14 @@ analytics:
 # Site Author
 author:
   name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  avatar           : "https://avatars.githubusercontent.com/u/19250245?s=160&u=c9ddf4fb7b1fbd4bc3b3ae261d105d6795af5a05&v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Java Server Developer"
   location         : "Somewhere"
-  email            :
+  email            : "lights8615@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+       url: "mailto:lights8615@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -114,7 +114,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       url: "https://github.com/lights93"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -281,6 +281,7 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
   # _pages
   - scope:
       path: "_pages"
