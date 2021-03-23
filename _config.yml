@@ -94,15 +94,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Minho Yoo"
   avatar           : "https://avatars.githubusercontent.com/u/19250245?s=160&u=c9ddf4fb7b1fbd4bc3b3ae261d105d6795af5a05&v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Java Server Developer"
-  location         : "Somewhere"
+  location         : "Yongin, Korea"
   email            : "lights8615@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:lights8615@gmail.com"
+      url: "mailto:lights8615@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -114,7 +114,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/lights93"
+      url: "https://github.com/lights93"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
