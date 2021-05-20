@@ -333,7 +333,7 @@ public class ProductCompositeServiceApplicationTests {
 
 자동으로 모든 마이크로서비스를 테스트하고 그 결과를 확인할 수 있어야 함
 
-이런 이유료 curl로 RESTful API를 호출하고 jq를 이용해 상태 코드외 JSON 응답을 확인하는 bash 스크립트 생성
+이런 이유로 curl로 RESTful API를 호출하고 jq를 이용해 상태 코드외 JSON 응답을 확인하는 bash 스크립트 생성
 
 ```bash
 #!/usr/bin/env bash
