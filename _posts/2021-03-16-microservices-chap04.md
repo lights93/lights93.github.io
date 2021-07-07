@@ -217,7 +217,7 @@ docker-compose down
 ```bash
 #!/usr/bin/env bash
 #
-# ./grdelw clean build
+# ./gradelw clean build
 # docker-compose build
 # docker-compose up -d
 #

@@ -187,7 +187,7 @@ public interface ReviewRepository extends CrudRepository<ReviewEntity, Integer> 
 
 - `@DataMongoTest`: 테스트를 시작할 때 내장형 MongoDB 데이터베이스를 시작한다
 - `@DataJpaTest`: 테스트를 시작할 때 내장형 SQL 데이터베이스를 시작한다.
-  - review 마이크로서비스의 핍ㄹ드 파일에 H2 데이터베이스를 테스트 의존성으로 추가 - > H2를 내장형 데이터베이스로 사용
+  - review 마이크로서비스의 필드 파일에 H2 데이터베이스를 테스트 의존성으로 추가 - > H2를 내장형 데이터베이스로 사용
   - 기본적으로 스프링 부트는 다른 테스트에 의한 부작용을 최소화하고자 SQL 데이터베이스에 업데이트한 내용을 롤백하도록 테스트를 구성
 
 ```java
