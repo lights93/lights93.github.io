@@ -430,5 +430,3 @@ invoke() 호출이 모든 인수를 두루 받아들이는 만능 호출 대신,
 ## 참조
 
 1. Optimizing Java(자바 최적화)
-
-2. https://github.com/AdoptOpenJDK/jitwatch
