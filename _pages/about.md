@@ -16,26 +16,15 @@ last_modified_at: 2021-07-26T20:54:41-05:00
 ## Skills(사용해본 것)
 
 - back-end
-  - **JAVA**
-  - spring(**spring boot**, **spring mvc**, spring webflux, spring batch)
-  - **mybatis**
-  - php
-  - nginx, apache
+  - **JAVA**, spring(**spring boot**, **spring mvc**, spring webflux, spring batch), **mybatis**, jpa, php, nginx, apache
 - database/cache
-  - **mysql**
-  - redis
-  - ELK(elastic search, logstash, kibana)
-  - mongodb
+  - **mysql**, redis, ELK(elastic search, logstash, kibana), mongodb
 - front-end
-  - javascript
-  - jquery
-  - vue.js
+  - javascript, jquery, vue.js
 - AI
-  - python
-  - keras, tensorflow
+  - python, keras, tensorflow
 - etc
-  - **git**
-  - **Intellij**
+  - **git**, jenkins
 
 ---
 
@@ -47,7 +36,7 @@ last_modified_at: 2021-07-26T20:54:41-05:00
 
 네이버 관련 마케팅 이벤트 페이지 개발 및 유지보수
 
-- 네이버페이 이벤트 페이지(ex. https://campaign.naver.com/npay/everydaycard/)
+- 네이버페이 이벤트 페이지(ex. https://m-campaign.naver.com/npay/cuplus_npay/)
 - VLIVE, 네이버 TV 페이지(ex. https://campaign.naver.com/sbsloud/intro/ko/)
 - 네이버 한글한글아름답게(https://hangeul.naver.com/)
 - 네이버 문화재단(https://www.naverfoundation.org/)
@@ -64,7 +53,7 @@ last_modified_at: 2021-07-26T20:54:41-05:00
 
 #### skills
 
-java, spring mvc, spring webflux, php, mysql, mybatis, redis, nginx, apache, javascript, jquery
+**java**, **spring mvc**, spring webflux, php, **mysql**, mybatis, redis, nginx, apache, javascript, jquery
 
 #### 맡은 역할
 
@@ -99,7 +88,7 @@ java, spring mvc, spring webflux, php, mysql, mybatis, redis, nginx, apache, jav
 
 #### skills
 
- java, spring MVC, mysql, mybatis, python, tensorflow, nginx, ELK(elasticsearch, logstash, kibana)
+ **java**, **spring MVC**, **mysql**, mybatis, python, tensorflow, nginx, ELK(elasticsearch, logstash, kibana)
 
 #### 맡은 역할
 
@@ -114,8 +103,8 @@ java, spring mvc, spring webflux, php, mysql, mybatis, redis, nginx, apache, jav
 ---
 
 ## EDUCATION
-
-2012.03 ~ 2018.02 성균관대학교 컴퓨터공학과 졸업
+- 2021.11 ~ 2021.12 우아한테크캠프 Pro 3기
+- 2012.03 ~ 2018.02 성균관대학교 컴퓨터공학과 졸업
 
 ---
 
@@ -133,7 +122,7 @@ java, spring mvc, spring webflux, php, mysql, mybatis, redis, nginx, apache, jav
 
 #### skills
 
- java, spring webflux, vuejs, mongoDB, javascript
+ **java**, **spring webflux**, vuejs, mongoDB, javascript
 
 #### 맡은 역할
 
