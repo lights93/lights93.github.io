@@ -2,7 +2,7 @@
 permalink: /about/
 title: "About"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-last_modified_at: 2021-07-26T20:54:41-05:00
+last_modified_at: 2022-01-08T00:00:00-00:00
 ---
 
 네이버 계열사인 N Tech Service에서 근무중인 백엔드 개발자입니다.   
