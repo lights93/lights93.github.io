@@ -10,10 +10,21 @@ tags:
 - jpa
 ---
 ## 부가 설명
-테스트하기 쉬운 부분과 어려운 부분을 분리해야 테스트코드를 작성하기 좋습니다.   
-분리한 후 도메인 객체에 대해서만 먼저 테스트코드를 작성합니다. (로직은 서비스레이어가 아닌 도메인에 개발해야 합니다.)  
-분리된 것으로 생성한 것(ex. random, shuffle, 날짜)은 파라미터로 전달받습니다.   
-TDD 리팩토링을 위한 과도기 단계에서는 복붙과 같은 임시 단계를 사용하는 것도 괜찮습니다.
+entity에 ID가 있으면 persist가 아닌 merge 방식으로 작동한다.
+
+repository는 DAO보다는 collection에 가까운 개념이다.
+
+(why? collections에서 내부의 값을 꺼낸 다음에 변경하면 다시 add나 put을 하시나요?? -> No)
+
+repository에서도 다시 add나 put하지 않기 때문에 collection에 더 가까운 개념
+
+`@JoinColumn`을 `@OneToMany`에서 사용하면 관계테이블을 쓰지 않겠다고 알려줌
+
+`@OneToOne` 또는 `@ManyToOne`처럼 뒤에 One이 나오는 경우 `@JoinColumn`은 컬럼이름 역할
+
+뒤에 Many가 오는 경우 `@JoinColumn`이 일을 하기 시작함
+
+보통 다대다 연관 관계는 일대다 관계와 다대일 관계로 풀어내는 연결테이블을 사용
 ## 1단계
 https://github.com/next-step/jwp-qna/pull/224
 ### 리뷰사항
@@ -44,7 +55,7 @@ https://github.com/next-step/jwp-qna/pull/356
 
 
 ## 참고
-
+- [우아한 태크캠프 PRO 3기](https://edu.nextstep.camp/s/Reggx5FJ)
 - [JPA @where 어노테이션](https://cheese10yun.github.io/jpa-where/)
 - [요청과 응답으로 엔티티(Entity) 대신 DTO를 사용하자](https://tecoble.techcourse.co.kr/post/2020-08-31-dto-vs-entity/)
 - [JPA 양방향 Entity 무한재귀 문제해결](https://thxwelchs.github.io/JPA%20%EC%96%91%EB%B0%A9%ED%96%A5%20Entity%20%EB%AC%B4%ED%95%9C%20%EC%9E%AC%EA%B7%80%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0/)
