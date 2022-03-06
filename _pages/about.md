@@ -2,29 +2,19 @@
 permalink: /about/
 title: "About"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-last_modified_at: 2022-01-08T00:00:00-00:00
+last_modified_at: 2022-03-06T00:00:00-00:00
 ---
+## INTRODUCE
 
-네이버 계열사인 N Tech Service에서 근무중인 백엔드 개발자입니다.   
-네이버 클린봇 API 1.0, 마케팅 개발 업무를 진행했습니다.   
-반복적인 업무를 자동화하는 것을 좋아합니다.   
+4년차 백엔드 개발자로 현재 네이버 계열사인 N Tech Service에서 근무 중입니다.   
+네이버에서 마케팅하는 다양한 페이지(네이버페이, 블로그, 인플루언서...)를 개발한 경험이 있습니다.   
+네이버 욕설 탐지 AI인 네이버 클린봇 모델 개발 및 API 개발을 한 경험이 있습니다.(클린봇 API 1.0)
+
+반복되는 일을 자동화하고 비효율적인 프로세스를 개선하는 일을 좋아합니다.   
+반복적으로 개발하던 유사한 구조의 페이지를 백오피스 기능을 이용하여 개선한 경험이 있습니다.
+
 가독성 좋은 코드를 작성하기 위해 노력합니다.   
-그리고, 새로운 기술을 학습하고 사용해보는 것을 좋아합니다.     
-
----
-
-## Skills(사용해본 것)
-
-- back-end
-  - **JAVA**, spring(**spring boot**, **spring mvc**, spring webflux, spring batch), **mybatis**, jpa, php, nginx, apache
-- database/cache
-  - **mysql**, redis, ELK(elastic search, logstash, kibana), mongodb
-- front-end
-  - javascript, jquery, vue.js
-- AI
-  - python, keras, tensorflow
-- etc
-  - **git**, jenkins
+사내 인턴분들의 코드리뷰 과정에서 멘토로 활동하여 좋은 코드를 작성할 수 있도록 도움을 준 경험이 있습니다.
 
 ---
 
@@ -33,50 +23,28 @@ last_modified_at: 2022-01-08T00:00:00-00:00
 ### 네이버 마케팅 개발(N Tech Service)
 
 #### 소개
-
-네이버 관련 마케팅 이벤트 페이지 개발 및 유지보수
+peak tps 100 이상의 네이버 관련 마케팅 페이지 개발 및 유지보수
 
 - 네이버페이 이벤트 페이지(ex. https://m-campaign.naver.com/npay/cuplus_npay/)
-- VLIVE, 네이버 TV 페이지(ex. https://campaign.naver.com/sbsloud/intro/ko/)
 - 네이버 한글한글아름답게(https://hangeul.naver.com/)
-- 네이버 문화재단(https://www.naverfoundation.org/)
-- 어둠속의 대화(https://didark.naver.com/)
 - 기타 네이버 마케팅 관련 페이지(https://campaign.naver.com/2020blog/myblogcheck/)
 
 #### 기간 
 
 2019-07 ~ 현재
 
-#### 개발 인원
-
-3 ~6 명
-
-#### skills
-
-**java**, **spring mvc**, spring webflux, php, **mysql**, mybatis, redis, nginx, apache, javascript, jquery
-
 #### 맡은 역할
-
-이벤트 단위로 개발자에게 할당되어 페이지를 개발하고, 어드민 등은 팀원 모두 공통으로 관리합니다.
-
-- 서버 개발(ex. 네이버페이 포인트 지급 이벤트, 투표하기, 의견수렴 ...)
-- 프론트 개발(ex. VLIVE 팝업 페이지, 네이버 tv 팝업페이지, 네이버 관련 마케팅 페이지 ...)
-- 업무 효율화를 위한 백오피스 개발(ex. 간단한 페이지 제작 가능한 어드민, 결과 다운로드/조회, 페이지에서 보이는 데이터 관리 ...)
-
-#### 주요 성과
-
-- 연간 100건이 넘는 이벤트 페이지 개발
-
-- 한글한글 아름답게  버전 업그레이드(spring 2 -> spring 5, jdk6 -> jdk8, xwork 제거, ibatis -> mybatis 네이버 레거시 라이브러리(lucy) 제거, tomcat6 -> tomcat 8.5(spring boot 내장 톰캣))
-- 팝업 페이지 자동 제작 백오피스 기능 개발(중복되는 개발 프로세스 개선)
-
+- peak tps 100 이상의 동시성 처리가 중요한 네이버페이 포인트 지급 이벤트 페이지 개발
+- 투표하기, 좋아요 등의 사용자 참여형 이벤트 페이지 개발
+- 한글한글 아름답게 레거시 개선(spring 2 -> spring 5, jdk6 -> jdk8, xwork 제거, tomcat6 -> tomcat 8.5(spring boot 내장 톰캣))
+- 유사한 구조의 VLIVE 팝업 페이지를 반복하여 직접 개발하는 것을 어드민에 기능을 추가하여 자동으로 페이지 개발하도록 개선
    
 
 ### 클린봇 API 1.0(N Tech Service)
 
 #### 소개
 
-사용자가 입력한 댓글의 욕설지수를 학습된 AI를 통해 판단하는 API
+네이버 댓글에서 사용자가 입력한 댓글의 욕설지수(0~1 사이의 소수)를 학습된 AI를 통해 92% 적중률로 판단하는 API
 
 #### 기간 
 
@@ -86,19 +54,25 @@ last_modified_at: 2022-01-08T00:00:00-00:00
 
 2명
 
-#### skills
-
- **java**, **spring MVC**, **mysql**, mybatis, python, tensorflow, nginx, ELK(elasticsearch, logstash, kibana)
-
 #### 맡은 역할
+- 클린봇 서버 구성 및 API 개발
+- 정확하고 빠르게 욕설을 판단하기 위한 클린봇 AI 모델(92% 정확도)을 개발하여 모니터링 비용 단축
+- 학습 시간 및 모델 비교 시간을 단축하기 위하여 데이터를 보기 쉽고 효율적으로 관리하는 어드민 개발
 
-- 클린봇 AI 학습 및 테스트
-- 클린봇 API 서버 구성 및 개발
-- 클린봇 AI 학습을 편리하게 하기 위한 어드민 개발
+---
 
-#### 주요 성과
+## Skills(사용해본 것)
 
-- 클린봇 AI가 대부분의 욕설 댓글을 탐지하여 댓글 모니터링 비용 절감
+- back-end
+  - **JAVA**, spring(**spring boot**, **spring mvc**, spring webflux), **mybatis**, jpa, php, nginx, apache
+- database/cache
+  - **mysql**, redis
+- front-end
+  - javascript, jquery
+- AI
+  - python, keras(tensorflow)
+- etc
+  - **git**, jenkins
 
 ---
 
@@ -113,18 +87,11 @@ last_modified_at: 2022-01-08T00:00:00-00:00
 ### DEVJOB
 
 #### 소개
-
+https://github.com/lights93/dev-job   
 채용공고/책 크롤링 개발
 
-#### 개발 인원
-
-1명
-
-#### skills
-
- **java**, **spring webflux**, vuejs, mongoDB, javascript
 
 #### 맡은 역할
 
-- 채용공고/책 크롤링 서버 개발
+- spring webflux를 공부하기 위해 채용공고/책 크롤링 서버 개발
 - 채용공고/책 크롤링 프론트 개발
