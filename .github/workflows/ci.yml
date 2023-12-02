@@ -37,8 +37,5 @@ jobs:
       - name: Build Assets
         run: npm i && npm run build
 
-      - name: clear
-        run: NODE_ENV=production npx rollup -c --bundleConfigAsCjs
-
       - name: Test Site
         run: bash tools/test
